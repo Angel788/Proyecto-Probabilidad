@@ -1,6 +1,2 @@
-Thanks for downloading this template!
+<h1>Proyecto Probabilidad</h1>
 
-Template Name: Remember
-Template URL: https://bootstrapmade.com/remember-free-multipurpose-bootstrap-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
