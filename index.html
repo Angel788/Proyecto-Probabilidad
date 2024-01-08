@@ -8,7 +8,8 @@
   <title>Remember Bootstrap Template - Index</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
-
+  <!--Font Awasome-->
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -68,7 +69,7 @@
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#formulario">Formulario</a></li>
           <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
           <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
@@ -233,15 +234,95 @@
     </section><!-- End Cta Section -->
 
     <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
+    <section id="formulario" class="formulario">
       <div class="container">
-
-        <div class="section-title" data-aos="zoom-in">
-          <h2>Services</h2>
-          <h3>Our Awesome <span>Services</span></h3>
-          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+        <h1 class="text-center"><i class="fa-solid fa-percent"></i> Cualculo de Probabilidad</h1>
+        <form action="" class="form-group">
+          <div class="row form-group">
+            <label for=""class="col-sm-2 col-form-label">Nombre: </label>
+            <div class="col-sm-10">
+                <input class="col-sm-10" id="edad" type="text" name="nombre" required>
+            </div>
+          </div>
+          <div class="row form-group">
+            <label for=""class="col-sm-2 col-form-label">Edad: </label>
+            <div class="col-sm-10">
+                <input class="col-sm-10" id="edad" type="numner" name="edad" required>
+            </div>
+          </div>
+          <div class="container">
+            <h2 class="text-center"><i class="fa-solid fa-notes-medical"></i> Complicaciones Medicas:</h3>
+            <div class="row">
+              <div class="col">
+                <div class="form-check">
+                  <input type="checkbox"  class="form-check-input position-static" name="obesidad" value="1">
+                  <label for="obesidad">Obesidad</label>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-check">
+                  <input type="checkbox"  class="form-check-input position-static" name="asma" value="1">
+                  <label for="obesidad">Asma</label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="form-check">
+                  <input type="checkbox"  class="form-check-input position-static" name="diabetes" value="1">
+                  <label for="obesidad">Diabetes</label>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-check">
+                  <input type="checkbox"  class="form-check-input position-static" name="enfermedades-cardiovasculares" value="1">
+                  <label for="obesidad">Enfermedades Cardiovasculares</label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="form-check">
+                  <input type="checkbox"  class="form-check-input position-static" name="hipertencion" value="1">
+                  <label for="obesidad">Hipertención</label>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-check">
+                  <input type="checkbox"  class="form-check-input position-static" name="cancer" value="1">
+                  <label for="obesidad">Cancer</label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="form-check">
+                  <input type="checkbox"  class="form-check-input position-static" name="renal" value="1">
+                  <label for="obesidad">Enfermedades Renales</label>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-check">
+                  <input type="checkbox"  class="form-check-input position-static" name="down" value="1">
+                  <label for="obesidad">Sindrome de Down</label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="form-check">
+                  <input type="checkbox"  class="form-check-input position-static" name="fumador" value="1">
+                  <label for="obesidad">Fumador</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-success btn-lg">Calcular Probabilidad</button>
+          </div>
+        </form>
+        <div class="res">
         </div>
-
         <div class="row">
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="icon-box" data-aos="zoom-in">
