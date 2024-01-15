@@ -222,84 +222,111 @@
             <div class="container">
               <h1 class="text-center"><i class="fa-solid fa-percent"></i> Cualculo de Probabilidad</h1>
               <form action="" class="form-group">
-                <div class="row form-group">
-                  <label for=""class="col-sm-2 col-form-label">Genero: </label>
-                  <div class="col-sm-10">
-                      <input class="col-sm-10" id="edad" type="text" name="genero" required>
-                  </div>
+                <div class="form-floating mb-3">
+                    <select name="genero" class="form-control">
+                        <option value="61.53">Hombre</option>
+                        <option value="38.47">Mujer</option>
+                    </select>
+                    <label for="genero">Genero</label>
                 </div>
-                <div class="row form-group">
-                  <label for=""class="col-sm-2 col-form-label">Edad: </label>
-                  <div class="col-sm-10">
-                      <input class="col-sm-10" id="edad" type="numner" name="edad" required>
+                <div class="container">
+                <div class="row form-floating mb-3">
+                    <select name="edad" id="" class="form-control">
+                        <option value="0.00094">Menor a 1</option>
+                        <option value="0.00062">1-4</option>
+                        <option value="0.00082">5-14</option>
+                        <option value="0.0025">15-24</option>
+                        <option value="0.0096">25-34</option>
+                        <option value="0.021">35-44</option>
+                        <option value="0.049">45-54</option>
+                        <option value="0.124">55-64</option>
+                        <option value="0.217">65-74</option>
+                        <option value="0.273">75-84</option>
+                        <option value="0.298">Mayor o iguals 85</option>
+                    </select>
+                    <label for="edad">Edad</label>
+                </div>
+                </div>
+                <div class="container">
+                  <div class="form-floating mb-3">
+                     <select name="comorbilidades" id="" class="form-control">
+                        <option value="2.3">NINGUNA</option>
+                        <option value="44.24 ">HIPERTENSION</option>
+                        <option value="36.54">DIABETES</option>
+                        <option value="20.41">OBESIDAD</option>
+                        <option value="7.42">TABAQUISMO</option>
+                     </select>
+                     <label for="comorbilidades">Principal Comorbilidad del Paciente</label>
                   </div>
                 </div>
                 <div class="container">
-                  <h2 class="text-center"><i class="fa-solid fa-notes-medical"></i> Complicaciones Medicas:</h3>
-                  <div class="row">
-                    <div class="col">
-                      <div class="form-check">
-                        <input type="checkbox"  class="form-check-input position-static" name="obesidad" value="1">
-                        <label for="obesidad">Obesidad</label>
-                      </div>
+                    <div class="form-floating mb-3">
+                        <select id="relacion-covid" name="estado" class="form-control">
+                            <option value="0.00288">Ciudad De Mexico</option>
+                        
+                            <option value="0.00230">Baja California Sur</option>
+                        
+                            <option value="0.00042">Baja California</option>
+                        
+                            <option value="0.00347">Sonora</option>
+                        
+                            <option value="0.00228">Sinaloa</option>
+                        
+                            <option value="0.00255">Yucatan</option>
+                        
+                            <option value="0.00253">Colima</option>
+                        
+                            <option value="0.00198">Queretaro</option>
+                        
+                            <option value="0.00240">Hidalgo</option>
+                        
+                            <option value="0.00259">Coahuila</option>
+                        
+                            <option value="0.00267">Nuevo Leon</option>
+                        
+                            <option value="0.00240">Estado De Mexico</option>
+                        
+                            <option value="0.00155">Chihuahua</option>
+                        
+                            <option value="0.00283">San Luis Potosi</option>
+                        
+                            <option value="0.00188">Morelos</option>
+                        
+                            <option value="0.00311">Quintanaroo</option>
+                        
+                            <option value="0.00268">Nayarit</option>
+                        
+                            <option value="0.00229">Puebla</option>
+                        
+                            <option value="0.00281">Aguacalinetes</option>
+                        
+                            <option value="0.00281">Guanajuato</option>
+                        
+                            <option value="0.00187">Zacatecas</option>
+                        
+                            <option value="0.00316">Tabasco</option>
+                        
+                            <option value="0.00270">Jalisco</option>
+                        
+                            <option value="0.00337">Campeche</option>
+                        
+                            <option value="0.00344">Tamaulipas</option>
+                        
+                            <option value="0.00244">Tlaxcala</option>
+                        
+                            <option value="0.00277">Veracruz</option>
+                        
+                            <option value="0.00254">Durango</option>
+                        
+                            <option value="0.00201">Guerrero</option>
+                        
+                            <option value="0.00240">Michoacan</option>
+                        
+                            <option value="0.00490">Oxaca</option>
+                        
+                            <option value="0.00277">Chiapas</option>
+                        </select>
                     </div>
-                    <div class="col">
-                      <div class="form-check">
-                        <input type="checkbox"  class="form-check-input position-static" name="asma" value="1">
-                        <label for="obesidad">Asma</label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      <div class="form-check">
-                        <input type="checkbox"  class="form-check-input position-static" name="diabetes" value="1">
-                        <label for="obesidad">Diabetes</label>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="form-check">
-                        <input type="checkbox"  class="form-check-input position-static" name="enfermedades-cardiovasculares" value="1">
-                        <label for="obesidad">Enfermedades Cardiovasculares</label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      <div class="form-check">
-                        <input type="checkbox"  class="form-check-input position-static" name="hipertencion" value="1">
-                        <label for="obesidad">Hipertención</label>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="form-check">
-                        <input type="checkbox"  class="form-check-input position-static" name="cancer" value="1">
-                        <label for="obesidad">Cancer</label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      <div class="form-check">
-                        <input type="checkbox"  class="form-check-input position-static" name="renal" value="1">
-                        <label for="obesidad">Enfermedades Renales</label>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="form-check">
-                        <input type="checkbox"  class="form-check-input position-static" name="down" value="1">
-                        <label for="obesidad">Sindrome de Down</label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      <div class="form-check">
-                        <input type="checkbox"  class="form-check-input position-static" name="fumador" value="1">
-                        <label for="obesidad">Fumador</label>
-                      </div>
-                    </div>
-                  </div>
                 </div>
                 <div class="d-flex justify-content-center">
                   <button type="submit" class="btn btn-success btn-lg">Calcular Probabilidad</button>
