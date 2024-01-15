@@ -218,10 +218,10 @@
                 </tbody>
                 </table>
         </div>
-        <section id="formulario" class="formulario">
+        <section  class="formulario">
             <div class="container">
               <h1 class="text-center"><i class="fa-solid fa-percent"></i> Calculo de Probabilidad</h1>
-              <form action="" class="form-group">
+              <form action="" class="form-group" id="formulario">
                 <div class="form-floating mb-3">
                     <select name="genero" class="form-control">
                         <option value="61.53">Hombre</option>
@@ -250,11 +250,11 @@
                 <div class="container">
                   <div class="form-floating mb-3">
                      <select name="comorbilidades" id="" class="form-control">
-                        <option value="2.3">NINGUNA</option>
-                        <option value="44.24 ">HIPERTENSION</option>
-                        <option value="36.54">DIABETES</option>
-                        <option value="20.41">OBESIDAD</option>
-                        <option value="7.42">TABAQUISMO</option>
+                        <option value="0.02">NINGUNA</option>
+                        <option value="9">HIPERTENSION</option>
+                        <option value="12">DIABETES</option>
+                        <option value="10">OBESIDAD</option>
+                        <option value="7">TABAQUISMO</option>
                      </select>
                      <label for="comorbilidades">Principal Comorbilidad del Paciente</label>
                   </div>
@@ -329,10 +329,10 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-center">
-                  <button type="submit" class="btn btn-success btn-lg">Calcular Probabilidad</button>
+                  <button  class="btn btn-success btn-lg" id="btn-sub">Calcular Probabilidad</button>
                 </div>
               </form>
-              <div class="res">
+              <div id="res">
               </div>
             </div>
           </section>
@@ -351,6 +351,7 @@
   
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/formulario.js"></script>
   
 </body>
   
