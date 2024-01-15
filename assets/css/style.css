@@ -398,7 +398,7 @@ h6 {
 #hero {
   width: 100%;
   height: 60vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("../img/hero-big.png") top center;
   background-size: cover;
   position: relative;
 }
@@ -605,7 +605,7 @@ section {
 }
 
 .about .video-box {
-  background: url("../img/about.jpg") center center no-repeat;
+  background: url("../img/aboutC19.jpg") center center no-repeat;
   background-size: cover;
   min-height: 400px;
 }
