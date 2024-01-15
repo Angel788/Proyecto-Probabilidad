@@ -70,7 +70,7 @@
           <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">Acerca de</a></li>
           <li><a class="nav-link scrollto" href="formulario.html">Formulario</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">Imagenes</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
           <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -121,7 +121,6 @@
             <div class="box-heading" data-aos="fade-up">
               <h4>Acerca de nosotros</h4>
               <h3>Datos sobre el virus sars-Cov2</h3>
-              <p>Casos Acumulados por año de COVID-19 en México.</p>
             </div>
 
             <div class="icon-box" data-aos="fade-up">
@@ -180,7 +179,7 @@
             <div class="box">
               <span>03.- Cansino Biologics Inc</span>
               <h4>China</h4>
-              <p>Convidecia</p>
+              <p>Convidecia: 72% de efectividad</p>
             </div>
           </div>
 
@@ -197,15 +196,15 @@
             <div class="box">
               <span>05.- Janssen-CILAG S.A. de C.V.</span>
               <h4>EstadoUnidense</h4>
-              <p>Ad26.COV2-S: 66% de efectividad: 72% de efectividad</p>
+              <p>Ad26.COV2-S: 66% de efectividaD.</p>
             </div>
           </div>
                    
           <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
             <div class="box">
-              <span>06.- Bharat Biotech International Limited: 78% de efectividad</span>
+              <span>06.- Bharat Biotech International Limited</span>
               <h4>India</h4>
-              <p>Covaxin</p>
+              <p>Covaxin: 78% de efectividad</p>
             </div>
           </div>
                     
@@ -260,165 +259,140 @@
     </section><!-- End Cta Section -->
 
     <!-- ======= Services Section ======= -->
-    <section id="formulario" class="formulario">
+    <section  class="formulario">
       <div class="container">
         <h1 class="text-center"><i class="fa-solid fa-percent"></i> Calculo de Probabilidad</h1>
-        <form action="" class="form-group">
-          <div class="row form-group">
-            <label for=""class="col-sm-2 col-form-label">Nombre: </label>
-            <div class="col-sm-10">
-                <input class="col-sm-10" id="edad" type="text" name="nombre" required>
-            </div>
+        <form action="" class="form-group" id="formulario">
+          <div class="form-floating mb-3">
+              <select name="genero" class="form-control">
+                  <option value="61.53">Hombre</option>
+                  <option value="38.47">Mujer</option>
+              </select>
+              <label for="genero">Genero</label>
           </div>
-          <div class="row form-group">
-            <label for=""class="col-sm-2 col-form-label">Edad: </label>
-            <div class="col-sm-10">
-                <input class="col-sm-10" id="edad" type="numner" name="edad" required>
+          <div class="container">
+          <div class="row form-floating mb-3">
+              <select name="edad" id="" class="form-control">
+                  <option value="0.00094">Menor a 1</option>
+                  <option value="0.00062">1-4</option>
+                  <option value="0.00082">5-14</option>
+                  <option value="0.0025">15-24</option>
+                  <option value="0.0096">25-34</option>
+                  <option value="0.021">35-44</option>
+                  <option value="0.049">45-54</option>
+                  <option value="0.124">55-64</option>
+                  <option value="0.217">65-74</option>
+                  <option value="0.273">75-84</option>
+                  <option value="0.298">Mayor o iguals 85</option>
+              </select>
+              <label for="edad">Edad</label>
+          </div>
+          </div>
+          <div class="container">
+            <div class="form-floating mb-3">
+               <select name="comorbilidades" id="" class="form-control">
+                  <option value="0.02">NINGUNA</option>
+                  <option value="9">HIPERTENSION</option>
+                  <option value="12">DIABETES</option>
+                  <option value="10">OBESIDAD</option>
+                  <option value="7">TABAQUISMO</option>
+               </select>
+               <label for="comorbilidades">Principal Comorbilidad del Paciente</label>
             </div>
           </div>
           <div class="container">
-            <h2 class="text-center"><i class="fa-solid fa-notes-medical"></i> Complicaciones Medicas:</h3>
-            <div class="row">
-              <div class="col">
-                <div class="form-check">
-                  <input type="checkbox"  class="form-check-input position-static" name="obesidad" value="1">
-                  <label for="obesidad">Obesidad</label>
-                </div>
+              <div class="form-floating mb-3">
+                  <select id="relacion-covid" name="estado" class="form-control">
+                      <option value="0.00288">Ciudad De Mexico</option>
+                  
+                      <option value="0.00230">Baja California Sur</option>
+                  
+                      <option value="0.00042">Baja California</option>
+                  
+                      <option value="0.00347">Sonora</option>
+                  
+                      <option value="0.00228">Sinaloa</option>
+                  
+                      <option value="0.00255">Yucatan</option>
+                  
+                      <option value="0.00253">Colima</option>
+                  
+                      <option value="0.00198">Queretaro</option>
+                  
+                      <option value="0.00240">Hidalgo</option>
+                  
+                      <option value="0.00259">Coahuila</option>
+                  
+                      <option value="0.00267">Nuevo Leon</option>
+                  
+                      <option value="0.00240">Estado De Mexico</option>
+                  
+                      <option value="0.00155">Chihuahua</option>
+                  
+                      <option value="0.00283">San Luis Potosi</option>
+                  
+                      <option value="0.00188">Morelos</option>
+                  
+                      <option value="0.00311">Quintanaroo</option>
+                  
+                      <option value="0.00268">Nayarit</option>
+                  
+                      <option value="0.00229">Puebla</option>
+                  
+                      <option value="0.00281">Aguacalinetes</option>
+                  
+                      <option value="0.00281">Guanajuato</option>
+                  
+                      <option value="0.00187">Zacatecas</option>
+                  
+                      <option value="0.00316">Tabasco</option>
+                  
+                      <option value="0.00270">Jalisco</option>
+                  
+                      <option value="0.00337">Campeche</option>
+                  
+                      <option value="0.00344">Tamaulipas</option>
+                  
+                      <option value="0.00244">Tlaxcala</option>
+                  
+                      <option value="0.00277">Veracruz</option>
+                  
+                      <option value="0.00254">Durango</option>
+                  
+                      <option value="0.00201">Guerrero</option>
+                  
+                      <option value="0.00240">Michoacan</option>
+                  
+                      <option value="0.00490">Oxaca</option>
+                  
+                      <option value="0.00277">Chiapas</option>
+                  </select>
               </div>
-              <div class="col">
-                <div class="form-check">
-                  <input type="checkbox"  class="form-check-input position-static" name="asma" value="1">
-                  <label for="obesidad">Asma</label>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <div class="form-check">
-                  <input type="checkbox"  class="form-check-input position-static" name="diabetes" value="1">
-                  <label for="obesidad">Diabetes</label>
-                </div>
-              </div>
-              <div class="col">
-                <div class="form-check">
-                  <input type="checkbox"  class="form-check-input position-static" name="enfermedades-cardiovasculares" value="1">
-                  <label for="obesidad">Enfermedades Cardiovasculares</label>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <div class="form-check">
-                  <input type="checkbox"  class="form-check-input position-static" name="hipertencion" value="1">
-                  <label for="obesidad">Hipertención</label>
-                </div>
-              </div>
-              <div class="col">
-                <div class="form-check">
-                  <input type="checkbox"  class="form-check-input position-static" name="cancer" value="1">
-                  <label for="obesidad">Cancer</label>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <div class="form-check">
-                  <input type="checkbox"  class="form-check-input position-static" name="renal" value="1">
-                  <label for="obesidad">Enfermedades Renales</label>
-                </div>
-              </div>
-              <div class="col">
-                <div class="form-check">
-                  <input type="checkbox"  class="form-check-input position-static" name="down" value="1">
-                  <label for="obesidad">Sindrome de Down</label>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <div class="form-check">
-                  <input type="checkbox"  class="form-check-input position-static" name="fumador" value="1">
-                  <label for="obesidad">Fumador</label>
-                </div>
-              </div>
-            </div>
           </div>
           <div class="d-flex justify-content-center">
-            <button type="submit" class="btn btn-success btn-lg">Calcular Probabilidad</button>
+            <button  class="btn btn-success btn-lg" id="btn-sub">Calcular Probabilidad</button>
           </div>
         </form>
-        <div class="res">
+        <div id="res">
         </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="icon-box" data-aos="zoom-in">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4><a href="">Lorem Ipsum</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4><a href="">Sed ut perspiciatis</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4><a href="">Magni Dolores</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
-              <div class="icon"><i class="bx bx-world"></i></div>
-              <h4><a href="">Nemo Enim</a></h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="400">
-              <div class="icon"><i class="bx bx-slideshow"></i></div>
-              <h4><a href="">Dele cardo</a></h4>
-              <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="500">
-              <div class="icon"><i class="bx bx-arch"></i></div>
-              <h4><a href="">Divera don</a></h4>
-              <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
-            </div>
-          </div>
-
-        </div>
-
       </div>
-    </section><!-- End Services Section -->
+    </section>
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
       <div class="container">
 
         <div class="section-title" data-aos="zoom-in">
-          <h2>Portfolio</h2>
+          <h2>Imagenes referentes</h2>
           <h3>Check our <span>Portfolio</span></h3>
-          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
         </div>
 
         <div class="row">
           <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-app">Medidas</li>
+              <li data-filter=".filter-card">Covid</li>
               <li data-filter=".filter-web">Web</li>
             </ul>
           </div>
@@ -427,91 +401,91 @@
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+            <img src="assets/img/portfolio/portfolio-15.png" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>App 1</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <h4>Medidas 1</h4>
+              <p>Medidas</p>
+              <a href="assets/img/portfolio/portfolio-15.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+            <img src="assets/img/COVID.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <h4>Extra 3</h4>
+              <p>Extra</p>
+              <a href="assets/img/COVID.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+            <img src="assets/img/portfolio/portfolio-14.png" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>App 2</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+              <h4>Medidas 2</h4>
+              <p>Medidas</p>
+              <a href="assets/img/portfolio/portfolio-14.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+            <img src="assets/img/portfolio/portfolio-16.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>Card 2</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+              <h4>Covid 2</h4>
+              <p>Covid</p>
+              <a href="assets/img/portfolio/portfolio-16.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+            <img src="assets/img/aboutC19.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>Web 2</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+              <h4>Extra 2</h4>
+              <p>Extra</p>
+              <a href="assets/img/aboutC19.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+            <img src="assets/img/portfolio/portfolio-13.png" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>App 3</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
+              <h4>Medidas 3</h4>
+              <p>Medidas</p>
+              <a href="assets/img/portfolio/portfolio-13.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+            <img src="assets/img/portfolio/portfolio-12.png" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>Card 1</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
+              <h4>Covid 1</h4>
+              <p>Covid</p>
+              <a href="assets/img/portfolio/portfolio-12.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+            <img src="assets/img/portfolio/portfolio-17.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>Card 3</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+              <h4>Covid 3</h4>
+              <p>Covid</p>
+              <a href="assets/img/portfolio/portfolio-17.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+            <img src="assets/img/hero-big.png" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <h4>Extra 3</h4>
+              <p>Extra</p>
+              <a href="assets/img/hero-big.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
@@ -624,52 +598,24 @@
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
                 <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <p>ESCOM - Escuela Superior de Cómputo - IPN</p>
               </div>
 
               <div class="email">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>info@example.com</p>
+                <p>despejelg1800@alumno.ipn.mx</p>
               </div>
 
               <div class="phone">
                 <i class="bi bi-phone"></i>
                 <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
+                <p>+1 55 1011 3935</p>
               </div>
 
             </div>
 
           </div>
-
-          <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left">
-
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-
-          </div>
-
         </div>
 
       </div>
@@ -729,6 +675,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/formulario.js"></script>
 
 </body>
 
