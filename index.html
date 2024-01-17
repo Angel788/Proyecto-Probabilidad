@@ -69,7 +69,8 @@
         <ul>
           <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">Acerca de</a></li>
-          <li><a class="nav-link scrollto" href="formulario.html">Formulario</a></li>
+          <li><a class="nav-link scrollto" href="#formulario">Formulario</a></li>
+          <li><a class="nav-link scrollto" href="#cat">Formula Cat</a></li>
           <li><a class="nav-link scrollto " href="#portfolio">Imagenes</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
         </ul>
@@ -243,7 +244,7 @@
     <!-- ======= Services Section ======= -->
     <section  class="formulario">
       <div class="container">
-        <h1 class="text-center"><i class="fa-solid fa-percent"></i> Calculo de Probabilidad</h1>
+        <h1 class="text-center"><i class="fa-solid fa-percent"></i> Calculo de Probabilidad De Morir Por Covid</h1>
         <form action="" class="form-group" id="formulario">
           <div class="form-floating mb-3">
               <select name="genero" class="form-control">
@@ -269,18 +270,6 @@
               </select>
               <label for="edad">Edad</label>
           </div>
-          </div>
-          <div class="container">
-            <div class="form-floating mb-3">
-               <select name="comorbilidades" id="" class="form-control">
-                  <option value="0.02">NINGUNA</option>
-                  <option value="9">HIPERTENSION</option>
-                  <option value="12">DIABETES</option>
-                  <option value="10">OBESIDAD</option>
-                  <option value="7">TABAQUISMO</option>
-               </select>
-               <label for="comorbilidades">Principal Comorbilidad del Paciente</label>
-            </div>
           </div>
           <div class="container">
               <div class="form-floating mb-3">
@@ -349,7 +338,46 @@
                   
                       <option value="0.00277">Chiapas</option>
                   </select>
+                  <label for="estado">Lugar de Residencía</label>
               </div>
+          </div>
+          <h3>Realizas algun deportes</h3>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="deportes" id="flexRadioDefault1" value="0.3">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Si
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="deportes" id="flexRadioDefault2" checked value="0.7">
+            <label class="form-check-label" for="flexRadioDefault2">
+              No
+            </label>
+          </div>
+          <h3>Principal Comorbilidad del Paciente</h3>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="9" id="flexCheckDefault" name="HIPERTENSION">
+            <label class="form-check-label" for="HIPERTENSION">
+              HIPERTENSION
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="12" id="flexCheckChecked" name="DIABETES">
+            <label class="form-check-label" for="DIABETES">
+              DIABETES
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="10" id="flexCheckDefault" name="OBESIDAD">
+            <label class="form-check-label" for="OBESIDAD">
+              OBESIDAD
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="3" id="flexCheckChecked" name="TABAQUISMO">
+            <label class="form-check-label" for="TABAQUISMO">
+              TABAQUISMO
+            </label>
           </div>
           <div class="d-flex justify-content-center">
             <button  class="btn btn-success btn-lg" id="btn-sub">Calcular Probabilidad</button>
@@ -358,7 +386,149 @@
         <div id="res">
         </div>
       </div>
+      <div class="container">
+        <h1>Probabilidad de riego por muerte por covid</h1>
+        <table class=" container table table-bordered table-responsive">
+            <caption class="caption-top h4 text-black" style="text-align: left"><a id="T1_down"></a>
+            <h5><span>Muertes por covid</span></h5>
+            </caption>
+            <thead>
+            <tr>
+            <th class="row1left" rowspan="2" scope="col" align="left" valign="bottom"></th>
+            <th class="row1" colspan="3" scope="col" align="center" valign="top">Numero de Muertes<sup>†</sup></th>
+            </tr>
+            <tr>
+            <th class="row1" colspan="1" scope="col" align="center" valign="top">2020</th>
+            <th class="row1" scope="col" align="center" valign="top">2021</th>
+            <th class="row1" scope="col" align="center" valign="top">2022</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td align="left" valign="top"><b><b>Total</b></b></td>
+            <td align="center" valign="top"><b><b>384,536 (93.2)</b></b></td>
+            <td align="center" valign="top"><b><b>462,193 (115.6)</b></b></td>
+            <td align="center" valign="top"><b><b>244,986 (61.3)</b></b></td>
+            </tr>
+            <tr>
+            <td colspan="4" align="left" valign="top"><b><b>Edades</b></b></td>
+            </tr>
+            <tr>
+            <td align="left" valign="top">&lt;1</td>
+            <td align="center" valign="top">52 (1.4)</td>
+            <td align="center" valign="top">167 (4.7)</td>
+            <td align="center" valign="top">231 (6.5)</td>
+            </tr>
+            <tr>
+            <td align="left" valign="top">1–4</td>
+            <td align="center" valign="top">25 (0.2)</td>
+            <td align="center" valign="top">66 (0.4)</td>
+            <td align="center" valign="top">152 (1.0)</td>
+            </tr>
+            <tr>
+            <td align="left" valign="top">5–14</td>
+            <td align="center" valign="top">68 (0.2)</td>
+            <td align="center" valign="top">185 (0.4)</td>
+            <td align="center" valign="top">203 (0.5)</td>
+            </tr>
+            <tr>
+            <td align="left" valign="top">15–24</td>
+            <td align="center" valign="top">612 (1.4)</td>
+            <td align="center" valign="top">1,652 (3.8)</td>
+            <td align="center" valign="top">641 (1.5)</td>
+            </tr>
+            <tr>
+            <td align="left" valign="top">25–34</td>
+            <td align="center" valign="top">2,609 (5.7)</td>
+            <td align="center" valign="top">7,033 (15.5)</td>
+            <td align="center" valign="top">2,376 (5.2)</td>
+            </tr>
+            <tr>
+            <td align="left" valign="top">35–44</td>
+            <td align="center" valign="top">6,756 (16.0)</td>
+            <td align="center" valign="top">17,412 (40.1)</td>
+            <td align="center" valign="top">5,183 (11.9)</td>
+            </tr>
+            <tr>
+            <td align="left" valign="top">45–54</td>
+            <td align="center" valign="top">18,250 (45.2)</td>
+            <td align="center" valign="top">39,360 (96.7)</td>
+            <td align="center" valign="top">12,169 (29.9)</td>
+            </tr>
+            <tr>
+            <td align="left" valign="top">55–64</td>
+            <td align="center" valign="top">45,377 (107.0)</td>
+            <td align="center" valign="top">79,199 (185.0)</td>
+            <td align="center" valign="top">30,526 (71.3)</td>
+            </tr>
+            <tr>
+            <td align="left" valign="top">65–74</td>
+            <td align="center" valign="top">82,055 (252.1)</td>
+            <td align="center" valign="top">111,412 (330.9)</td>
+            <td align="center" valign="top">53,228 (158.1)</td>
+            </tr>
+            <tr>
+            <td align="left" valign="top">75–84</td>
+            <td align="center" valign="top">106,020 (644.4)</td>
+            <td align="center" valign="top">110,536 (682.1)</td>
+            <td align="center" valign="top">67,116 (414.1)</td>
+            </tr>
+            <tr>
+            <td align="left" valign="top">≥85</td>
+            <td align="center" valign="top">122,707 (1,842.9)</td>
+            <td align="center" valign="top">95,168 (1,592.6)</td>
+            <td align="center" valign="top">73,157 (1,224.2)</td>
+            </tr>
+            <tr>
+            <td colspan="4" align="left" valign="top"><b><b>Genero</b></b></td>
+            </tr>
+            <tr>
+            <td align="left" valign="top">Femenino</td>
+            <td align="center" valign="top">175,818 (73.9)</td>
+            <td align="center" valign="top">202,687 (91.8)</td>
+            <td align="center" valign="top">112,287 (49.8)</td>
+            </tr>
+            <tr>
+            <td align="left" valign="top">Masculino</td>
+            <td align="center" valign="top">208,718 (117.0)</td>
+            <td align="center" valign="top">259,506 (144.5)</td>
+            <td align="center" valign="top">132,699 (76.3)</td>
+            </tr>
+            </tbody>
+            </table>
+            </div>
     </section>
+    <div class="cat">
+      <div class="container" style="padding: 1rem; margin: 1rem;">
+        <h1>La inecuaición CAT</h1>
+        <p>Dicha inecuación nos permite saber a nosotoros si podemos infectarnos de Covid, al estar con otra perssona infectada, esta inequacion 
+            tiene tres importes tipos de parametros el primer apartado tiene que ver con el paciente infectado, las variables del enterno y el paciente
+            sano. Algo que se puede combrobar con dicha formula es que si quitamos las varibles del enterno el factor mas importante que se juega a la hora
+            de contraer el covid-19 es tener cubrevocas, algo en considerar es que las varibles del enterno son algo complejas de calcular.
+        </p>
+        <img  class="rounded mx-auto d-block" src="https://malonecenter.jhu.edu/wp-content/uploads/2020/10/COVIDtransmission_illoP01-scaled.jpg" alt="" srcset=""style="height:400px;width:600px; padding=1rem;margin=1rem;">
+        <br>
+        <h2>Varibles del infectado</h2>
+        <ul class="list-group">
+            <li class="list-group-item">Rh representa la tasa de expulsión de fluidos de la nariz y la boca del huésped (número de gotitas por unidad de tiempo)</li>
+            <li class="list-group-item">Fvh representa la carga de emisión viral fraccionaria: el número promedio de virus contenidos en cada gota expulsada</li>
+            <li class="list-group-item">Fmh representa la fracción de gotitas expulsadas que pasan a través de la cubierta facial del huésped</li>
+            <li class="list-group-item">Fah representa la fracción de gotas expulsadas que se aerosolizan (es decir, quedan suspendidas en el aire)</li>
+        </ul>
+        <h2>Varibles del enterno</h2>
+        <ul class="list-group">
+            <li class="list-group-item">Fat representa la fracción de gotitas en aerosol transportadas a las proximidades de los susceptibles que contienen viriones viables</li>
+            <li class="list-group-item">Fvv representa la fracción de aerosoles en las proximidades de la persona susceptible que sería inhalada por una persona susceptible sin cubrevocas</li>
+        </ul>
+        <h2>Variables del susceptible</h2>
+        <ul class="list-group">
+            <li class="list-group-item">Fis representa la fracción de aerosoles en las proximidades de la persona susceptible que sería inhalada por una persona susceptible que no tenga cubrevocas</li>
+            <li class="list-group-item">Fms representa la fracción de aerosoles inhalados que se filtran a través de la mascarilla de las personas susceptibles</li>
+            <li class="list-group-item">T es la duracion de la exposición</li>
+        </ul>
+        <p>Donnde Nc representa el número mínimo de viriones inhalados necesarios para iniciar una infección en personas susceptibles.</p>
+    </div>
+    </div>
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
